@@ -207,20 +207,20 @@ COMANDOS ORACLE
 db connect MJS
 (yval4em0) [MJS]>db ls tbs
 ```
-TBS   Ext.      Seg.    BlSz   Extent   Tbs Size       Free       Used Pct.        Max Pct.
-St.  Tablespace Name          Type  Mgt.  Al. Mgt.     (k)      (k)    (in Mo)    (in Mo)    (in Mo) Used    (in Mo)  Max
+TBS   Ext.           Seg.   BlSz  Extent   Tbs Size     Free   Used Pct.    Max Pct.
+St.  Tablespace Name          Type  Mgt.  Al. Mgt.       (k)     (k)       (in Mo)    (in Mo)    (in Mo)   Used    (in Mo)  Max
 ---- ------------------------ ----- ----- --- ------ ----- -------- ---------- ---------- ---------- ---- ---------- ----
-ON   EXPLOIT                  PERM  LOC.  A   AUTO         8       64              10            9             1        10           500      0
-ON   MJSQDDA1            PERM  LOC.  A   AUTO          8       64            500          499          1         0          1,024     0
-ON   MJSQDDF1            PERM  LOC.  U   AUTO           8   10,240         11           10            1         9           11         9
-ON   MJSQDIX1              PERM  LOC.  A   AUTO           8       64           100           99          1          1            200       1
-ON   MJSQDTM0           TEMP  LOC.  U   MANUAL     8       64          1,500      1,499        1          0         1,500     0
-ON   MJSQDTM1           TEMP  LOC.  U   MANUAL     8      128         1,500      1,500        0          0         1,500     0
-ON   MJSQDUD1            UNDO  LOC.  A   MANUAL     8       64         1,024        696        328       32      1,024    32
-ON   SYSAUX                   PERM  LOC.  A   AUTO           8       64         1,000        756        244        24      1,000    24
-ON   SYSTEM                   PERM  LOC.  A   MANUAL     8       64           500          121        379       76        500    76
-                                                                    ---------- ---------- ----------      ----------
-Tot:                                                                     6,145      5,189        956           7,259
+ON   EXPLOIT          PERM  LOC.  A   AUTO       8       64       10          9          1        10        500       0
+ON   MJSQDDA1         PERM  LOC.  A   AUTO       8       64      500        499          1         0      1,024       0
+ON   MJSQDDF1         PERM  LOC.  U   AUTO       8   10,240       11         10          1         9         11       9
+ON   MJSQDIX1         PERM  LOC.  A   AUTO       8       64      100         99          1         1        200       1
+ON   MJSQDTM0         TEMP  LOC.  U   MANUAL     8       64    1,500      1,499          1         0      1,500       0
+ON   MJSQDTM1         TEMP  LOC.  U   MANUAL     8      128    1,500      1,500          0         0      1,500       0
+ON   MJSQDUD1         UNDO  LOC.  A   MANUAL     8       64    1,024        696        328        32      1,024      32
+ON   SYSAUX           PERM  LOC.  A   AUTO       8       64    1,000        756        244        24      1,000      24
+ON   SYSTEM           PERM  LOC.  A   MANUAL     8       64      500        121        379        76        500      76
+                                                                        ----------  ----------  -------- ----------
+Tot:                                                                       6,145      5,189        956    7,259
 ```
 * Listar los archivos: db ls files
 ```
