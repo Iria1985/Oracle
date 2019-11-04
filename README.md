@@ -198,7 +198,7 @@ COMANDOS ORACLE
 	RMAN_BACKUP                   MJS
 	RMAN_RESTAURATION             MJS
 	SCRIPT                        MJS
-```	
+```
 * Conectar con la base con consola ksh: db connect MJS
 	 db connect MJS
 	(yval4em0) [MJS]>
@@ -206,7 +206,7 @@ COMANDOS ORACLE
 
 db connect MJS
 (yval4em0) [MJS]>db ls tbs
-
+```
 TBS   Ext.      Seg.    BlSz   Extent   Tbs Size       Free       Used Pct.        Max Pct.
 St.  Tablespace Name          Type  Mgt.  Al. Mgt.     (k)      (k)    (in Mo)    (in Mo)    (in Mo) Used    (in Mo)  Max
 ---- ------------------------ ----- ----- --- ------ ----- -------- ---------- ---------- ---------- ---- ---------- ----
@@ -221,10 +221,10 @@ ON   SYSAUX                   PERM  LOC.  A   AUTO           8       64         
 ON   SYSTEM                   PERM  LOC.  A   MANUAL     8       64           500          121        379       76        500    76
                                                                     ---------- ---------- ----------      ----------
 Tot:                                                                     6,145      5,189        956           7,259
-
-	• Listar los archivos: db ls files
-
-                                                                                           File Size           Next      Max
+```
+* Listar los archivos: db ls files
+```
+                                                                                          File Size           Next      Max
 Tbs Name / File Class  Filename                                                TYPE   F_ID        Mo Auto        Mo       Mo CREATION_TIME
 ---------------------- ------------------------------------------------------- ----- ----- --------- ----- -------- -------- -------------------
 EXPLOIT                /users2/mjs00/base/dbaqddax.dbf                         DATA      5        10 YES          0      500 25/04/2019 11:40:25
@@ -246,9 +246,9 @@ SYSTEM                 /users2/mjs00/base/mjsqdsy_1.dbf                        D
 [ ONLINE REDO LOG ]    /users3/mjs00/base/mjsrl32.dbf                          REDO              100
                                                                                            ---------
 Total                                                                                          6,745
-
-	• Listar los usuarios: db ls users
-
+```
+* Listar los usuarios: db ls users
+```
 USERNAME        PASSWORD         ACCOUNT_STATUS   PROFILE              DEF-TBS         TEMP-TBS        LOCK_DATE EXPIRY_DA PTIME
 --------------- ---------------- ---------------- -------------------- --------------- --------------- --------- --------- ---------
 CERBERE2008                      OPEN             PROFILE_PSA_LIGHT    MJSQDDF1        MJSQDTM0                            25-APR-19
@@ -280,19 +280,19 @@ SYS$UMF                          EXPIRED & LOCKED DEFAULT              SYSTEM   
 SYSRAC                           EXPIRED & LOCKED DEFAULT              SYSTEM          MJSQDTM0        25-APR-19 25-APR-19 25-APR-19
 XDB                              EXPIRED & LOCKED DEFAULT              SYSAUX          MJSQDTM0        25-APR-19 25-APR-19 25-APR-19
 XS$NULL                          EXPIRED & LOCKED DEFAULT              SYSTEM          MJSQDTM0        25-APR-19 25-APR-19 25-APR-19
+```
+* Chequear el estado de la base: db check
+```
+Database State                             open                OK
+Instance Open Mode                         allowed             OK
+Database LOGMODE                           ARCHIVELOG          OK
+Nb Indexs UNUSABLE                         0                   OK
+Scan last 24h in Alert.log                 No errors           OK
+Listener listening on port                 1521                OK
+```
 
-	• Chequear el estado de la base: db check
-Database State                                     open                      OK
-Instance Open Mode                          allowed                  OK
-Database LOGMODE                           ARCHIVELOG        OK
-Nb Indexs UNUSABLE                           0                            OK
-Scan last 24h in Alert.log                    No errors              OK
-Listener listening on port                    1521                      OK
+* Mostrar aletas de la base: db alert
+* tbo sql
 
-
-	• Mostrar aletas de la base: db alert
-	• tbo sql
-
-
-HACER UN BACKUP DE UNA BASE DE DATOS
+## HACER UN BACKUP DE UNA BASE DE DATOS
 
